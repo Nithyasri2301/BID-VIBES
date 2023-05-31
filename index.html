@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dash Board</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Nav bar Start -->
+  <nav class="navbar navbar-light bg-white fixed-top">
+    <div class="container-fluid ">
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><b>BID VIBES</b></a>
+        <div class="bar">
+          <i class="fa-solid fa-bars" data-bs-target="#navbarTogglerDemo" data-bs-toggle="collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"></i>
+        </div>
+        <form class="d-flex search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="form-control me-2 ps-5" type="search" placeholder="Search...." aria-label="Search">
+        </form>
+
+        <div class="navicon d-flex gap-5">
+          <div class="d-flex gap-4 align-items-center"><img class="admin" src="Img/Admin.svg" alt="admin">
+            <h6>Admin</h6>
+          </div>
+          <div class="navimg d-flex gap-3">
+          <img src="Img/expand.svg" alt="ex">
+          <div class="d-flex"><img src="Img/Vector (1).svg" alt="mail"><sup><img src="Img/yellow.svg" alt=""></sup></div>
+          <div class="d-flex"><img src="Img/Vector (2).svg" alt="bell"><sup><img src="Img/red.svg" alt=""></sup></div>
+          <img src="Img/Vector (3).svg" alt="power">
+        </div>
+        </div>
+      </div>
+  </nav>
+
+  <div class="sidebar navbar-expand-lg" id="navbarTogglerDemo" >
+    <div class="row">
+      <div class="d-flex flex-column justify-content-between col-auto bg-white ">
+
+        <div class="sidemenu">
+          <ul class="nav nav-pills flex-column mt-5 mt-sm-0" id="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/dash.svg" alt="..">
+                <span class="dboard ms-2">DASHBOARD</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/org.svg" alt="..">
+                <span class="ms-2">ORGANIZATION</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/Mob.svg" alt="..">
+                <span class="ms-2">LATEST APPLICATIONS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/Path.svg" alt="..">
+                <span class="ms-2">TECHNICAL ORDERS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/Tender.svg" alt="..">
+                <span class="ms-2">TENDER RELATED ORDERS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/Tender.svg" alt="..">
+                <span class="ms-2">ORDERS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/Review.svg" alt="..">
+                <span class="ms-2">REVIEW MEETING MINUTES</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/Employe.svg" alt="..">
+                <span class="ms-2">EMPLOYEE INFORMATIONS
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/resource.svg" alt="..">
+                <span class="ms-2">RESOURCES</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/location.svg" alt="..">
+                <span class="ms-2">TENDERS BY LOCATION</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/status.svg" alt="..">
+                <span class="ms-2">TENDERS STATUS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/cancel.svg" alt="..">
+                <span class="ms-2">CANCELLED/RETENDERS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <img src="Img/demo.svg" alt="..">
+                <span class="ms-2">REPORTS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <span class="ms-2">DOCUMENT MANAGEMENT</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                <span class="ms-2">BID TRACKER</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav bar End -->
+
+  <!-- section starts here -->
+  <section class="right-container mt-5">
+    <div class="demo">
+      <div class="dashview d-flex justify-content-between">
+        <div class="d-flex mt-5">
+          <button class="house"><i class="fa-solid fa-house-chimney" style="color: #ffffff;"></i></button>
+          <p>DASHBOARD</p>
+        </div>
+        <div class="d-flex mt-5">
+          <p>OVERVIEW</p>
+          <img class="exclamation" src="Img/circle.svg" alt="..">
+        </div>
+      </div>
+      <!-- Card Starts Here -->
+      <div class="card-group d-flex gap-3 text-white flex-column flex-lg-row align-items-center">
+        <div class="card card1 p-4">
+          <p class="fw-bold">Weekly Tenders</p>
+          <h4>$ 15,0000</h4>
+          <p>Increased By 45%</p>
+          <div class="card-body">
+            <img src="Img/Ellipse.svg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body1">
+            <img src="Img/Ellipse 4.svg" class="card-img-top" alt="...">
+          </div>
+          <div class="pic">
+            <img src="Img/bypass-alt-svgrepo-com 1.svg" alt="img">
+          </div>
+        </div>
+        <div class="card card2 p-4">
+          <p class="fw-bold">Weekly Orders</p>
+          <h4>45,6334</h4>
+          <p>Decreased By 10%</p>
+          <div class="card-body">
+            <img src="Img/Ellipse.svg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body1">
+            <img src="Img/Ellipse 4.svg" class="card-img-top" alt="...">
+          </div>
+          <div class="pic">
+            <img src="Img/auction-bid-svgrepo-com 1.svg" alt="img..">
+          </div>
+        </div>
+        <div class="card card3 p-4">
+          <p class="fw-bold">Visitors Online</p>
+          <h4>95,5741</h4>
+          <p>Increased By 15%</p>
+
+          <div class="card-body">
+            <img src="Img/Ellipse.svg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body1">
+            <img src="Img/Ellipse 4.svg" class="card-img-top" alt="...">
+          </div>
+          <div class="pic">
+            <img src="Img/bypass-alt-svgrepo-com 1.svg" alt="img">
+          </div>
+        </div>
+      </div>
+      <!-- Card ends Here -->
+
+
+      <div class="script d-flex gap-5 mt-4 flex-column flex-lg-row ">
+        <div id="columnchart_material" class="barchart" style="width: 80%; height:400px; margin-top: 5%;"></div>
+        <div id="donutchart" class="piechart" style="width: 80%; height:400px;margin-top: 5%;"></div>
+      </div>
+    </div>
+
+
+    <!-- section ends here -->
+
+    <!-- Reacent updates starts here -->
+    <section class="row calenders d-flex mt-4">
+      <div class="col-lg-4 col-12 wrapper me-4">
+        <header>
+
+          <div class="icons d-flex justify-content-between w-100">
+            <span id="prev" class="material-symbols-rounded"><i class="fa-solid fa-less-than"></i></span>
+            <p class="current-date"></p>
+            <span id="next" class="material-symbols-rounded"><i class="fa-solid fa-greater-than"></i></span>
+          </div>
+        </header>
+        <div class="calender">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+
+      </div>
+
+      <div class="col-lg-7 col-12  ReacentUpdates p-4">
+        <h4>Recent Updates</h4>
+        <div class="d-flex gap-2 img">
+          <img src="Img/Rectangle 7.svg" alt="7">
+          <img src="Img/Rectangle 8.svg" alt="8">
+        </div>
+
+        <div class="d-flex gap-2 mt-3 img">
+          <img src="Img/Rectangle 9.svg" alt="7">
+          <img src="Img/Rectangle 10.svg" alt="8">
+        </div>
+        <div class="d-flex gap-3 mt-3">
+          <img src="Img/image 1.svg" alt="logo">
+          <div class=" mt-3">
+            <h5>Bidvibes</h5>
+            <p>It is a long established fact that a reader will be distracted by the
+              esadable content of a page.</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+    <!-- Reacent updates ends here -->
+    <!-- Tender status starts here -->
+    <section class="TenderStatus mt-4 ms-4">
+      <div class="row">
+        <div class="col-lg-6 col-12 tenders me-5 p-5">
+          <h4 class="mt-2">Tender Status</h4>
+          <table>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Tender Date</th>
+              <th>Progress</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Rajesh</td>
+              <td>27-02-2023</td>
+              <td><meter id="meter1" value="40" min="0" max="100"></meter></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Kannan</td>
+              <td>26-02-2023</td>
+              <td><meter id="meter2" value="80" min="0" max="100"></meter></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Rocky</td>
+              <td>25-02-2023</td>
+              <td><meter id="meter3" value="50" min="0" max="100"></meter></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Maya</td>
+              <td>24-02-2023</td>
+              <td><meter id="meter4" value="20" min="0" max="100"></meter></td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-5 col-12 note px-5 mt-lg-0 mt-5">
+          <div class="d-flex gap-5">
+            <input type="text" class="input" placeholder="What do you need to do today?">
+            <button>ADD</button>
+          </div>
+          <div class="d-flex justify-content-between mt-5 line">
+            <div class="d-flex gap-2">
+              <div class="box"></div>
+              <p>Lorem Ipsum is simply dummy text</p>
+            </div>
+            <img src="Img/cross.svg" alt="cross">
+          </div>
+          <div class="d-flex justify-content-between mt-5 line">
+            <div class="d-flex gap-2">
+              <div class="box1"></div>
+              <p class="text-decoration-line-through">Lorem Ipsum is simply dummy text</p>
+            </div>
+            <img src="Img/cross.svg" alt="cross">
+          </div>
+          <div class="d-flex justify-content-between mt-5 line ">
+            <div class="d-flex gap-2">
+              <div class="box1"></div>
+              <p class="text-decoration-line-through">Lorem Ipsum is simply dummy text</p>
+            </div>
+            <img src="Img/cross.svg" alt="cross">
+          </div>
+          <div class="d-flex justify-content-between mt-5 line">
+            <div class="d-flex gap-2">
+              <div class="box"></div>
+              <p>Lorem Ipsum is simply dummy text</p>
+            </div>
+            <img src="Img/cross.svg" alt="cross">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer>
+    <div class="foot">
+      <p>Copyright © 2017 BidVibes. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- script starts here -->
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['bar'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses'],
+        ['category 1', 75, 25],
+        ['category 2', 60, 70],
+        ['category 3', 50, 30],
+        ['category 4', 85, 68],
+        ['category 5', 60, 24],
+        ['category 6', 90, 30],
+      ]);
+
+      var options = {
+        chart: {
+          // title: 'Company Performance',
+          // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          colors: ['#FFAA6C', '#BB71F6']
+
+        }
+      };
+
+      var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+      chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+  </script>
+  <script>
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['item1', 1],
+        ['item2', 2],
+        ['item3', 2],
+        ['item4 ', 2]
+      ]);
+
+      var options = {
+        // title: 'My Daily Activities',
+        pieHole: 0.7,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+      chart.draw(data, options);
+    }
+
+  </script>
+
+
+  <script src="script.js"></script>
+
+
+  <!-- script ends here -->
+
+
+
+
+</body>
+
+</html>
